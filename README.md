@@ -1,3 +1,10 @@
+## Module info - osminedu team - forms project
+This module adds an extra editor field to instances of these content types : 
+- Article
+- Page
+- Webform
+- aitisis_eisigitwn (custom content type for forms project )
+
 ## Installation
 
 Just enable the module like you normally would, though keep in mind that it depends on the Entity Reference module.
