@@ -7,7 +7,7 @@
  */
 function editor_list_node_types() {
   // If we need to add more node types, we just add them to this array.
-  return array('aitisis_eisigiton','webform','article','page');
+  return array('article');
 }
 
 /**
@@ -64,27 +64,6 @@ function editor_list_control_field_access($op, $field, $entity_type, $entity, $a
  * Implements hook_form_BASE_FORM_ID_alter().
  */
 function editor_list_form_article_node_form_alter(&$form, &$form_state, $form_id) {
-  $form['#after_build'][] = 'editor_list_node_form_after_build';
-}
-
-/**
- * Implements hook_form_BASE_FORM_ID_alter().
- */
-function editor_list_form_aitisis_eisigiton_node_form_alter(&$form, &$form_state, $form_id) {
-  $form['#after_build'][] = 'editor_list_node_form_after_build';
-}
-
-/**
- * Implements hook_form_BASE_FORM_ID_alter().
- */
-function editor_list_form_page_node_form_alter(&$form, &$form_state, $form_id) {
-  $form['#after_build'][] = 'editor_list_node_form_after_build';
-}
-
-/**
- * Implements hook_form_BASE_FORM_ID_alter().
- */
-function editor_list_form_webform_node_form_alter(&$form, &$form_state, $form_id) {
   $form['#after_build'][] = 'editor_list_node_form_after_build';
 }
 
